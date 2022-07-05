@@ -1,0 +1,41 @@
+{
+    "name": "sophy/comparison",
+    "description": "Product or Service Comparison Package.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sophy Prak",
+            "email": "sophy.prak@gmail.com",
+            "homepage": "http://ohkhmer.com"
+        }
+    ],
+    "homepage": "https://github.com/sophy/comparison",
+    "keywords": ["Laravel", "Comparison"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sophy\\Comparison\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sophy\\Comparison\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sophy\\Comparison\\ComparisonServiceProvider"
+            ],
+            "aliases": {
+                "Comparison": "Sophy\\Comparison\\Facades\\Comparison"
+            }
+        }
+    }
+}
